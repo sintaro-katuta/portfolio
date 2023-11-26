@@ -1,0 +1,16 @@
+version: '3'
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-front
+    tty: true
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=development
+    env_file: .env
+    volumes:
+    - ./:/usr/src/app
+    command: sh -c "cd portfolio && npm start"
