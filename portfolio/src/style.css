@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+.main-font{
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+.main span {
+display: inline-block;
+width: 6ch;
+font: bold 200% Consolas, Monaco, monospace;
+overflow: hidden;
+white-space: nowrap;
+font-weight: 400;
+border-right: 2px solid transparent;
+animation: typing 1s steps(6), caret 0.3s steps(1) infinite;
+}
+@keyframes typing {
+from {
+    width: 0;
+}
+}
+@keyframes caret {
+50% {
+    border-right-color: currentColor;
+}
+}
