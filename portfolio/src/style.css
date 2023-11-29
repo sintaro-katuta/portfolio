@@ -16,13 +16,13 @@ font-weight: 400;
 border-right: 2px solid transparent;
 animation: typing 1s steps(6), caret 0.3s steps(1) infinite;
 }
-@keyframes typing {
-from {
-    width: 0;
-}
-}
-@keyframes caret {
-50% {
-    border-right-color: currentColor;
-}
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    }
+    @keyframes caret {
+    50% {
+        border-right-color: currentColor;
+    }
 }

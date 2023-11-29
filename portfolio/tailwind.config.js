@@ -4,10 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'base-5':'#CBE2F7'
+        'base-2': '#1583FE',
+        'base-5':'#CBE2F7',
+      },
+      backgroundColor: {
+        'base-2': '#1583FE',
+        'base-5':'#CBE2F7',
       },
       screens: {
-        'iphone': '375px',
+        'pc': '1000px',
+        'iphone': '999px',
       },
     },
   },
