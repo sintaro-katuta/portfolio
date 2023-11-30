@@ -7,7 +7,7 @@ export default function NotFound() {
             <Header/>
             <div className="w-full h-full px-7">
                 <div className="w-full h-3/4 flex items-center justify-center">
-                    <p className="text-xl text-center main-font">ページが見つかりませんでした</p>
+                    <p className="text-xl text-center">ページが見つかりませんでした</p>
                 </div>
                 <Menu />
             </div>

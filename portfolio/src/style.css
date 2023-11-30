@@ -3,9 +3,10 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 
-.main-font{
+html {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
+
 .main span {
 display: inline-block;
 width: 6ch;

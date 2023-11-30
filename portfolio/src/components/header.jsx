@@ -9,9 +9,9 @@ export default function Header() {
                     <img src={"/profile.png"} alt="" className="rounded-full w-20 h-20 p-1" />
                 </div>
                 <div className="w-1/3">
-                    <p className="text-center main-font text-xl">勝田紳太郎</p>
+                    <p className="text-center text-xl tracking-wide">勝田紳太郎</p>
                 </div>                
-                <div className="w-1/3 flex justify-between">
+                <div className="w-1/3 flex justify-center gap-16">
                     {menu.map((item) => (
                         <Link to={`/${item.toLowerCase()}`} className="hidden iphone:block cursor-pointer">{item}</Link>                    
                     ))}

@@ -7,7 +7,7 @@ export default function Blog() {
             <Header/>
             <div className="w-full h-full px-7">
                 <div className="w-full h-3/4 flex items-center justify-center">
-                    <p className="text-xl text-center main-font">Blog</p>
+                    <p className="text-xl text-center">coming soon...</p>
                 </div>
                 <Menu />
             </div>
