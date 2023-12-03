@@ -40,7 +40,7 @@ export default function Works() {
         <div className="w-screen h-screen fixed bg-white">
             <Header/>
             <div className="w-full h-full px-7">
-                <div className="w-full h-3/4 p-2 flex flex-col items-center justify-start gap-5 overflow-y-auto">
+                <div className="w-full h-3/4 p-2 flex flex-col items-center justify-center gap-5 overflow-y-auto">
                     {works.map((item) => (
                         <Work work={item} />
                     ))}

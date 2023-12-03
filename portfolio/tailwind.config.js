@@ -10,6 +10,10 @@ module.exports = {
       backgroundColor: {
         'base-2': '#1583FE',
         'base-5':'#CBE2F7',
+        'qiita': '#55C500',
+      },
+      borderColor: {
+        'qiita': '#55C500',
       },
       screens: {
         'pc': '1000px',
