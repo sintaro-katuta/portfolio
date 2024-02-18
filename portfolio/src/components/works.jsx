@@ -17,7 +17,7 @@ export default function Works() {
      */
     const works = [
         {
-            "title": "Foop チーム開発（リーダー）",
+            "title": "Foop",
             "image": "/Foop.svg",   
             "language": ["/nextjs.svg", "/typescript.svg", "/firebase.svg"],
             "url": "https://gy-project.vercel.app/",
@@ -25,7 +25,7 @@ export default function Works() {
             "description": "IRと聞くとギャンブルのイメージがありますが、リゾートテーマパークでホテルやレストランなどの施設があり、海外では経済効果があったほどメリットがあります。そんなIRをSNSを使って盛り上げていくサービスです。"
         },
         {
-            "title": "FocusRoom 個人開発",
+            "title": "FocusRoom",
             "image": "/FocusRoom.svg",
             "language": ["/nextjs.svg", "/typescript.svg", "/supabase.svg", "/Bootstrap.svg"],
             "url": "https://focus-room.vercel.app/",
@@ -33,7 +33,7 @@ export default function Works() {
             "description": "WebRTCとP2Pという技術を使って開発しました。データベースはRDBのBaaSのSupabaseを使用しました。"
         },
         {
-            "title":"カプコレ 個人開発",
+            "title":"カプコレ",
             "image": "/kapukore.svg",
             "language": ["/nextjs.svg", "/typescript.svg","supabase.svg", "/tailwind.svg"],
             "url": "https://capsule-collection.vercel.app/",
@@ -42,7 +42,7 @@ export default function Works() {
         }
     ];
     return(
-        <div className="w-full h-body flex flex-col items-center justify-center gap-5 overflow-y-auto px-3 py-5">
+        <div className="w-full h-3/4 flex flex-col items-center justify-start gap-5 overflow-y-auto px-3 py-5">
             {works.map((item) => (
                 <Work work={item} />
             ))}

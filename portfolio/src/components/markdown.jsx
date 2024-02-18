@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
@@ -15,6 +16,9 @@ export default function Markdown(props) {
     return(
         <div className="w-full h-full py-2 flex flex-col gap-3">
             <div className="w-full h-full flex flex-col gap-3">
+                <Link to="/blog">
+                    <img src="/back.svg" alt="" className='w-8 h-8' />
+                </Link>
                 <div className='w-full h-10'>
                     <input type="text" placeholder='タイトル' className='w-full h-full p-2 border-2 border-black rounded-xl' onChange={(e) => setTitle(e.target.value)} />
                 </div>
