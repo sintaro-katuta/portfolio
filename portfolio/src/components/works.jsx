@@ -1,5 +1,3 @@
-import Header from "./header"
-import Menu from "./menu";
 import Work from "./work";
 
 export default function Works() {
@@ -19,34 +17,35 @@ export default function Works() {
      */
     const works = [
         {
-            "title": "Foop",
+            "title": "Foop チーム開発（リーダー）",
             "image": "/Foop.svg",   
             "language": ["/nextjs.svg", "/typescript.svg", "/firebase.svg"],
             "url": "https://gy-project.vercel.app/",
             "summary": "Foopは、IRのリゾートテーマパーク専用のSNSです。この制作ではスマホの大きさには対応しておりませんのでPCでの閲覧をお願いします。",
             "description": "IRと聞くとギャンブルのイメージがありますが、リゾートテーマパークでホテルやレストランなどの施設があり、海外では経済効果があったほどメリットがあります。そんなIRをSNSを使って盛り上げていくサービスです。"
         },
-        
         {
-            "title": "FocusRoom",
-            "image": "/FocusRoom.png",
+            "title": "FocusRoom 個人開発",
+            "image": "/FocusRoom.svg",
             "language": ["/nextjs.svg", "/typescript.svg", "/supabase.svg", "/Bootstrap.svg"],
             "url": "https://focus-room.vercel.app/",
             "summary": "FocusRoomは、Zoomのようなビデオ会議アプリです。現在は、機能がローカルのみで動作しますので、デプロイ先では動きません。",
             "description": "WebRTCとP2Pという技術を使って開発しました。データベースはRDBのBaaSのSupabaseを使用しました。"
         },
+        {
+            "title":"カプコレ 個人開発",
+            "image": "/kapukore.svg",
+            "language": ["/nextjs.svg", "/typescript.svg","supabase.svg", "/tailwind.svg"],
+            "url": "https://capsule-collection.vercel.app/",
+            "summary": "カプコレは、カプセルトイのコレクションを管理するアプリです。",
+            "description": "今までにしたガチャガチャを持っていますか？コレクションの魅力をもっと伝えるために手軽にガチャガチャをまとめることができるサービスです"
+        }
     ];
     return(
-        <div className="w-screen h-screen fixed bg-white">
-            <Header/>
-            <div className="w-full h-full px-7">
-                <div className="w-full h-3/4 p-2 flex flex-col items-center justify-center gap-5 overflow-y-auto">
-                    {works.map((item) => (
-                        <Work work={item} />
-                    ))}
-                </div>
-                <Menu />
-            </div>
+        <div className="w-full h-body flex flex-col items-center justify-center gap-5 overflow-y-auto px-3 py-5">
+            {works.map((item) => (
+                <Work work={item} />
+            ))}
         </div>
     )
 }

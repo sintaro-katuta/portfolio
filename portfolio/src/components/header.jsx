@@ -4,7 +4,7 @@ export default function Header() {
     const menu = ['Profile', 'Works', 'Blog']
     return(
         <>
-            <div className="bg-base-5 h-20 flex items-center justify-center">
+            <div className="bg-base-5 w-full h-20 flex items-center justify-center">
                 <div className="w-1/3 h-full">
                     <img src={"/profile.png"} alt="" className="rounded-full w-20 h-20 p-1" />
                 </div>

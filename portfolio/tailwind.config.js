@@ -19,6 +19,9 @@ module.exports = {
         'pc': '1000px',
         'iphone': '999px',
       },
+      height:{
+        'body': 'calc(100vh - 145px)',
+      }
     },
   },
   plugins: [],
