@@ -18,6 +18,7 @@ export default defineNuxtConfig({
 					fontFamily: {
 						robotoSlab: ["Roboto Slab", "serif"],
 						shipporiAntique: ["Shippori Antique", "serif"],
+						appleSystem: ["-apple-system", "BlinkMacSystemFont", "sans-serif"],
 					},
 					screens: {
 						xs: "320px",
