@@ -41,8 +41,16 @@ const address = ref("Japan,Osaka");
 const hobbies = ref(["🧸コレクション", "🎮ゲーム", "⌨ガジェット"]);
 const languages = ref(["Javascript / Typescript", "Python"]);
 const icons = ref([
-  { name: "Qiita", icon: "/images/qiita-icon.png", url: "https://qiita.com/sintaro-katuta" },
-  { name: "Github", icon: "/images/github-mark.png", url: "https://github.com/sintaro-katuta" },
-])
+	{
+		name: "Qiita",
+		icon: "/images/qiita-icon.png",
+		url: "https://qiita.com/sintaro-katuta",
+	},
+	{
+		name: "Github",
+		icon: "/images/github-mark.png",
+		url: "https://github.com/sintaro-katuta",
+	},
+]);
 </script>
 
