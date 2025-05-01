@@ -1,6 +1,6 @@
 services:
   front:
-    build: ./docker
+    build: .
     container_name: portfolio-front
     tty: true
     ports:
@@ -11,4 +11,4 @@ services:
     volumes:
       - .:/app
     command: "yarn run dev"
-  
+
