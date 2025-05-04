@@ -15,7 +15,7 @@
               :to="icon.url"
               class="w-fit font-appleSystem text-md font-light text-white hover:bg-gray-700 p-2 rounded-lg"
             >
-              <img :src="icon.icon" :alt="icon.name" class="w-8 h-8 rounded-full hover:animate-pulse" />
+              <img :id="icon.name" :src="icon.icon" :alt="icon.name" class="w-8 h-8 rounded-full hover:animate-pulse" />
             </NuxtLink>
           </div>
         </div>
@@ -39,7 +39,7 @@ const birthday = ref("2002/8/25");
 const work = ref("WebDev");
 const address = ref("Japan,Osaka");
 const hobbies = ref(["🧸コレクション", "🎮ゲーム", "⌨ガジェット"]);
-const languages = ref(["Javascript / Typescript", "Python"]);
+const languages = ref(["JavaScript / TypeScript", "Python"]);
 const icons = ref([
 	{
 		name: "Qiita",
