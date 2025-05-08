@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Shippori+Antique&family=Zen+Maru+Gothic&display=swap');
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-robotoSlab: 'Roboto Slab', serif;
+  --font-shipporiAntique: 'Shippori Antique', sans-serif;
+  --font-zenMaruGothic: 'Zen Maru Gothic', sans-serif;
+}

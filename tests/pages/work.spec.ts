@@ -20,5 +20,4 @@ test("ワーク画面にアプリケーションが表示されているか", as
     expect(appName).not.toBeNull();
     expect(appDescription).not.toBeNull();
   }
-
 });
