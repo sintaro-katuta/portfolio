@@ -41,6 +41,4 @@ const { data: articles, error } = await useFetch(
 if (error.value) {
 	console.error(error.value);
 }
-
-console.log(articles.value);
 </script>
