@@ -34,9 +34,9 @@ const links = ref(["Profile", "Works", "Blog"]);
 
 const onMenu = ref(false);
 const toggleMenu = () => {
-  onMenu.value = !onMenu.value;
+	onMenu.value = !onMenu.value;
 };
 const closeMenu = () => {
-  onMenu.value = false;
+	onMenu.value = false;
 };
 </script>

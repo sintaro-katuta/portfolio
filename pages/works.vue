@@ -24,9 +24,11 @@
 </template>
 
 <script setup>
-const { data: repos, error } = await useFetch('https://api.github.com/users/sintaro-katuta/repos')
+const { data: repos, error } = await useFetch(
+	"https://api.github.com/users/sintaro-katuta/repos",
+);
 
 if (error.value) {
-  console.error(error.value)
+	console.error(error.value);
 }
 </script>
