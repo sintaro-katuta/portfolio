@@ -1,9 +1,14 @@
-FROM node:latest
+FROM node:lts
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-RUN npm install -g npm@latest
+COPY package.json yarn.lock ./
 
-RUN npm install -g create-react-app
+RUN yarn install
 
-EXPOSE 3002
+RUN yarn playwright install-deps
+
+RUN yarn playwright install
+
+COPY . .
+

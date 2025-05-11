@@ -1,16 +1,15 @@
-version: '3'
 services:
   front:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: portfolio-front
     tty: true
     ports:
-      - "3002:3002"
+      - "3000:3000"
+      - "8080:8080"
     environment:
       - NODE_ENV=development
     env_file: .env.local
     volumes:
-    - ./:/usr/src/app
-    command: sh -c "cd portfolio && npm start"
+      - .:/app
+    command: "yarn run dev"
+
