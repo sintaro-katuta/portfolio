@@ -2,7 +2,7 @@
 <template>
   <Header />
   <p id="title" class="font-appleSystem font-medium text-3xl text-center p-4">🌟 Works 💻</p>
-  <UContainer class="w-full grid sm:grid-cols-3 max-sm:grid-cols-2 gap-4 py-8">
+  <UContainer class="w-full grid md:grid-cols-3 max-md:grid-cols-2 gap-4 py-8">
     <UCard hover v-for="repo in repos" :key="repo.id" class="app w-full h-full">
       <template #header>
         <div class="flex justify-between items-center">
