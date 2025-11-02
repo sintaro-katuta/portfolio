@@ -6,8 +6,7 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"ignore": [".nuxt/"]
+		"includes": ["pages/", "components/", "tests/"]
 	},
 	"formatter": {
 		"enabled": true,
