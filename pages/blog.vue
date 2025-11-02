@@ -37,7 +37,6 @@ const { data: articles, error } = await useFetch(
 		},
 	},
 );
-console.log(articles)
 if (error.value) {
 	console.error(error.value);
 }
