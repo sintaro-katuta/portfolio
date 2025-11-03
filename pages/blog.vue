@@ -9,12 +9,12 @@
           <p class="text-sm text-gray-500">{{ article.user.id }}({{ article.user.name }})</p>
         </div>
         <div class="flex justify-between items-center">
-          <ULink as="button" :to="article.url" class="title text-xl text-white truncate">{{ article.title }}</ULink>
+          <ULink as="button" :to="article.url" class="title text-xl font-bold truncate hover:underline">{{ article.title }}</ULink>
         </div>
       </template>
       <p class="truncate">{{ article.description }}</p>
         <div class="flex gap-2 mb-4">
-          <p v-for="tag in article.tags" class="h-fit text-sm border bg-gray-600 rounded-xl p-1">{{ tag.name }}</p>
+          <p v-for="tag in article.tags" class="text-sm border bg-slate-100 dark:bg-gray-600 rounded-xl p-1 px-2">#{{ tag.name }}</p>
         </div>
         <div class="flex items-center justify-start gap-4">
           <div class="flex items-center gap-1">
@@ -37,7 +37,6 @@ const { data: articles, error } = await useFetch(
 		},
 	},
 );
-
 if (error.value) {
 	console.error(error.value);
 }
