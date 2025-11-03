@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:22-bookworm-slim
 
 WORKDIR /app
 
@@ -11,4 +11,3 @@ RUN yarn playwright install-deps
 RUN yarn playwright install
 
 COPY . .
-
