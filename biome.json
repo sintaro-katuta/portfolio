@@ -5,9 +5,6 @@
     "clientKind": "git",
     "useIgnoreFile": false
   },
-  "files": {
-    "includes": ["pages/", "components/", "tests/"]
-  },
   "formatter": {
     "enabled": true,
     "indentStyle": "tab"

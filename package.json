@@ -8,8 +8,9 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"check": "yarn biome check --write",
-		"format": "yarn biome format --write",
+		"check": "yarn biome check --write ./pages/ ./components/ ./tests/",
+		"format": "yarn biome format --write ./pages/ ./components/ ./tests/",
+		"lint": "yarn biome lint --write ./pages/ ./components/ ./tests/",
 		"e2e": "playwright test",
 		"e2e:ui": "playwright test --ui-port=8080 --ui-host=0.0.0.0"
 	},
